@@ -1,3 +1,11 @@
 #!/usr/bin/python3
+
 def element_at(my_list, idx):
-    return(my_list(idx) if 0 <= idx < len(my_list) else "None")
+    """
+    Gets an element in a list at given index
+    And returns it
+    """
+    if idx >= len(my_list) or idx < 0:
+        return
+
+    return (my_list[idx])
