@@ -8,7 +8,6 @@
   * @head: The pointer to the head of the list.
   * Return: 0 if list not a palindrome, 1 if it is.
   */
-
 int is_palindrome(listint_t **head)
 {
 	listint_t *tmp = *head;
