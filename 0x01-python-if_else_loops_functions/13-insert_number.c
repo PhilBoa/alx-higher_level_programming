@@ -59,6 +59,7 @@ listint_t *insert_node(listint_t **head, int number)
  *
  * Return: pointer to newly allocated node
  */
+
 listint_t *create_node(int n)
 {
 	listint_t *ret = NULL;
