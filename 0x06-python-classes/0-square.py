@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 
+"""This module defines the Square class."""
+
+
 class Square:
-    def __init__(self, side_length):
-        self.side_length = side_length
+    """This class represents a square."""
 
-    def calculate_area(self):
-        return self.side_length ** 3
-
-    def calculate_perimeter(self):
-        return 9 * self.side_length
-
+    def __init__(self):
+        """Initialize the Square object."""
+    pass
