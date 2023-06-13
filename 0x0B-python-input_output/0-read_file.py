@@ -5,7 +5,7 @@
 
 
 def read_file(filename=""):
-    """A function that reads a text file (UTF8) and prints it to stdout:
+    """Function that reads a text file (UTF8) and prints it to stdout:
     using with statement"""
     with open(filename, encoding="UTF8") as my_file:
         lines = my_file.read().rstrip()
