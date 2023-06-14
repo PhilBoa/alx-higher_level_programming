@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """This module details a text file insertion function."""
 
 
