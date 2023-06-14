@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+"""My class module
+"""
 
-"""This module details a Python class-to-JSON function."""
 
+class MyClass:
+    """ My class
+    """
 
-def class_to_json(obj):
-    """A function that returns the dictionary represntation of a simple data structure."""
+    def __init__(self, name):
+        self.name = name
+        self.number = 0
 
-    return obj.__dict__
+    def __str__(self):
+        return "[MyClass] {} - {:d}".format(self.name, self.number)
