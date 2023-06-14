@@ -1,20 +1,34 @@
 #!/usr/bin/python3
-"""This module details a text file insertion function."""
+
+"""This module creates a class Student that defines a student
+and retrieves a dictionary representation of a Student instance"""
 
 
-def append_after(filename="", search_string="", new_string=""):
-    """Insert text after each line containing a given string in a file.
+def pascal_triangle(n):
+    """Returns a list of lists representing Pascal's triangle of n.
 
     Args:
-        filename (str): The name of the file.
-        search_string (str): The string to search for within the file.
-        new_string (str): The string to insert.
+        n (int): The number of rows in Pascal's triangle.
+
+    Returns:
+        list: A list of lists representing Pascal's triangle of n.
     """
-    text = ""
-    with open(filename) as r:
-        for line in r:
-            text += line
-            if search_string in line:
-                text += new_string
-    with open(filename, "w") as w:
-        w.write(text)
+    triangle = []
+
+    if n <= 0:
+        return triangle
+
+    row = [1]
+    triangle.append(row)
+
+    for i in range(1, n):
+        curr_row = [1]
+
+        for j in range(1, i):
+            element = triangle[i - 1][j - 1] + triangle[i - 1][j]
+            curr_row.append(element)
+
+        curr_row.append(1)
+        triangle.append(curr_row)
+
+    return triangle
