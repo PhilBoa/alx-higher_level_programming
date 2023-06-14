@@ -1,5 +1,4 @@
  #!/usr/bin/python3
-
 """This module details about reading a text file unicoded with
 (UTF8) and prints it to stdout"""
 
